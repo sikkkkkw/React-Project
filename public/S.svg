@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <clipPath id="clip-path">
+      <rect x="-5" y="-9" width="22" height="45" fill="none"/>
+    </clipPath>
+    <filter id="S" x="12" y="-8" width="22" height="53" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-SPRK_default_preset_name_custom_1">
+      <rect width="45" height="45"/>
+    </clipPath>
+  </defs>
+  <g id="SPRK_default_preset_name_custom_1" data-name="SPRK_default_preset_name_custom – 1" clip-path="url(#clip-SPRK_default_preset_name_custom_1)">
+    <g id="스크롤_그룹_1" data-name="스크롤 그룹 1" transform="translate(17 9)" clip-path="url(#clip-path)" style="isolation: isolate">
+      <g data-type="innerShadowGroup">
+        <text id="S-2" data-name="S" transform="translate(1 -17)" fill="#e50914" font-size="40" font-family="SegoeUI, Segoe UI"><tspan x="-5.625" y="43">S</tspan></text>
+        <g transform="matrix(1, 0, 0, 1, -17, -9)" filter="url(#S)">
+          <text id="S-3" data-name="S" transform="translate(18 -8)" fill="#fff" font-size="40" font-family="SegoeUI, Segoe UI"><tspan x="-5.625" y="43">S</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
