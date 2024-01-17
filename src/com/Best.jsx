@@ -11,13 +11,12 @@ export default function Best() {
             <span className="text-while text-5xl">
               That's a
               <br />
-              Wrap 2024
-            </span>
+              Wrap 2023            </span>
           </h2>
           <p className="text-[20px] text-white">
             The best (and worst) of the year from TMDB.
           </p>
-          <button className="flex items-center justify-center p-2 mt-4  rounded-3xl border-2 text-[18px] w-[150px] h-[40px] text-white">
+          <button className="flex items-center  justify-center p-2 mt-4  rounded-3xl border-2 text-[18px] w-[150px] h-[40px] text-white">
             Check it out
             <GoArrowRight />
           </button>

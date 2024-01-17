@@ -14,7 +14,8 @@ const router = createBrowserRouter([
       { path: "/", element: <App /> },
       { path: "/movies", element: <Movies /> },
       { path: "/tv", element: <TV /> },
-      { path: "/detail/:movieId", element: <Details /> }, //변수명은 movieId
+      { path: "/detail/:movieId", element: <Details /> },
+      { path: "/detail/:TVId", element: <Details /> }, //변수명은 movieId
       { path: "/search", element: <Search /> },
       // { path: "/detail/:movieId", element: <Details /> },
       // { path: "detail/:Id", element: <Detail /> },

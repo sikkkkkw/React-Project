@@ -40,7 +40,7 @@ export default function TrendingPage() {
         {/* 타이틀 */}
         <h2 className="px-4 py-2 font-semibold text-[24px]">Trending</h2>
         {/* 리스트 */}
-        <div className="w-[1100px] h-[500px] mx-auto bg-main pointer-events-none ">
+        <div className="w-[1100px] h-[350px] mx-auto bg-main pointer-events-none ">
           <Slider {...settings}>
             {lists.map((item) => (
               <div key={item.id} className="relative">
