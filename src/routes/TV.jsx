@@ -41,7 +41,7 @@ export default function TV() {
       <div className="w-full flex flex-col items-center justify-center py-16 bg-[#1B354A]">
         <div className="w-[1000px] flex flex-wrap gap-4 gap-y-8">
           {lists?.results?.map((item) => (
-            <Link key={item.id} to={ `/detail/${item.id}` }>
+            <Link key={item.id} to={`/tvdetail/${item.id}`}>
               <div
                 key={item.id}
                 className="w-[180px] h-[340px] rounded-lg shadow-lg overflow-hidden"

@@ -4,7 +4,7 @@ import { BiPlusMedical } from "react-icons/bi";
 import { FaBell, FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-export default function NavPage() {
+export default function NavPage({ scroll }) {
   const [isPlusClicked, setIsPlusClicked] = useState(false);
 
   const handlePlusClick = () => {
@@ -12,7 +12,11 @@ export default function NavPage() {
   };
 
   return (
-    <div className="w-full h-[60px] bg-[#032541] flex justify-center">
+    <div
+      className={`sticky top-0 ${
+        scroll ? "translate-y-0" : "-translate-y-[60px]"
+      } duration-300 z-20 w-full h-[60px] bg-[#032541] flex justify-center`}
+    >
       {/* 중앙정렬된 네비게이션 컨테이너 */}
       <div className="max-w-[1300px] w-full h-full flex justify-between px-8">
         {/* 1.왼쪽: 로고+메뉴 */}

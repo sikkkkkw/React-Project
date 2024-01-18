@@ -34,7 +34,6 @@ export default function TrendingPage2() {
   }, [activeTab]);
 
   const handleLoadMore = () => {
-    // Increase the number of displayed items when "Load More" is clicked
     setDisplayedItems((prev) => prev + 5);
   };
 
@@ -93,7 +92,7 @@ export default function TrendingPage2() {
           <div className="flex justify-center mt-8">
             <button
               onClick={handleLoadMore}
-              className="bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition mb-3"
+              className="bg-blue-500 w-[97%] font-semibold  text-white px-6 py-3 rounded-full hover:bg-blue-700 transition cursor-pointer mb-3"
             >
               Load More
             </button>

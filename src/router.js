@@ -4,6 +4,7 @@ import NotFound from "./routes/NotFound";
 import Movies from "./routes/Movies";
 import TV from "./routes/TV";
 import Details from "./com/Details";
+import TVDetails from "./com/TVDetails";
 import Search from "./routes/Search";
 const router = createBrowserRouter([
   {
@@ -15,7 +16,7 @@ const router = createBrowserRouter([
       { path: "/movies", element: <Movies /> },
       { path: "/tv", element: <TV /> },
       { path: "/detail/:movieId", element: <Details /> },
-      { path: "/detail/:TVId", element: <Details /> }, //변수명은 movieId
+      { path: "/tvdetail/:tvId", element: <TVDetails /> }, //변수명은 movieId
       { path: "/search", element: <Search /> },
       // { path: "/detail/:movieId", element: <Details /> },
       // { path: "detail/:Id", element: <Detail /> },
