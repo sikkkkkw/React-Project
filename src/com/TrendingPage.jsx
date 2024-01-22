@@ -25,7 +25,8 @@ export default function TrendingPage() {
   }, []);
 
   const settings = {
-    dots: true,
+    dots: false, // Remove the dots (pagination)
+    arrows: false, // Remove the arrows (navigation buttons)
     infinite: true,
     speed: 500,
     slidesToShow: 1,
