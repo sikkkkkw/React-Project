@@ -63,7 +63,14 @@ export default function TrendingPage2() {
         {/* 리스트 */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 p-4">
           {lists.slice(0, displayedItems).map((item) => (
-            <Link key={item.id} to={`/detail/${item.id}`}>
+            <Link
+              key={item.id}
+              to={
+                item.media_type === "movie"
+                  ? `/detail/${item.id}`
+                  : `/tvdetail/${item.id}`
+              }
+            >
               {/* 이미지를 Link로 감싸고 디테일 페이지의 경로를 제공합니다. */}
               <motion.div
                 layoutId={`bubble-${item.id}`}
